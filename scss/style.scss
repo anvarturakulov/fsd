@@ -199,7 +199,24 @@
             font-weight: normal;
             font-size: 14px;
             line-height: 24px;
+            &.input__radio{
+                width: 20px;
+                height: 20px;
+                background: #FFFFFF !important;
+                border: 1px solid #BC9CFF !important;
+                box-sizing: border-box !important;
+                border-radius: 10px !important;
+                margin-bottom: 0px;
+                margin-right: 10px;
+                
+            }
+            &:checked {
+                border: 6px solid black;
+                background-color: #000;
+            }
+
         }
+        
         
     }
 }
@@ -215,6 +232,25 @@
     margin-top: 20px;
     margin-bottom: 5px;
 }
+
+.box{
+    display: flex;
+}
+.radio__box{
+    display: flex;
+    width: 110px;  
+    align-items: center;
+    
+}
+
+// .input__radio{
+//     width: 20px;
+//     height: 20px;
+//     background: #FFFFFF;
+//     border: 1px solid #BC9CFF;
+//     box-sizing: border-box;
+//     border-radius: 10px;
+// }
 
 @import 'media';
 //end present box

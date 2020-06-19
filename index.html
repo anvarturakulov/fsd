@@ -25,7 +25,6 @@
                     </div>
                     <div class="header__linkbox">
                         <a class="btn__enter" data-fancybox data-src="#modal__input" href="javascript:;">войти</a>
-                        
                         <a class="bnt__reg" data-fancybox data-src="#modal__reg" href="javascript:;">зарегистрироваться</a>
                     </div>
                 </div>
@@ -40,7 +39,6 @@
             </div>
         </div> 
     </section>
-
 
 
     <div id="modal__input">
@@ -62,7 +60,18 @@
         <form>
             <input type="text" placeholder="Имя" required>
             <input type="text" placeholder="Фамилия" required>
+            <div class="box">
+                <div class="radio__box">
+                    <input class="input__radio" name="dzen" type="radio" value="m">
+                    <div class="radio__box-text">Мужчина</div>
+                </div>
+                <div class="radio__box">
+                    <input class="input__radio" name="dzen" type="radio" value="j">
+                    <div class="radio__box-text">Женщина</div>
+                </div> 
+            </div>
             
+
             <div class="form__text">данные для входа в сервис</div>
             <input type="text" placeholder="Email" required>
             <input type="text" placeholder="Пароль" required>
