@@ -1,0 +1,77 @@
+@import 'global';
+@import 'vars';
+@import 'fonts';
+
+.header__inner{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 70px;    
+}
+.logo{
+    width: 106px;
+    height: 40px;
+}
+
+.header__menu{
+    ul{
+        li{
+            display: inline-block;
+            &+li{
+                margin-left: 20px;
+            }
+        }
+        margin-right: 20px;        
+    }
+}
+
+.drop__down{
+    position: relative;
+    padding-right: 24px;
+    &::after{
+        position: absolute;
+        font-family: 'icomoon';
+        content: "\f078";
+        right: 0;
+        font-size: 10px;
+    }
+}
+
+.btn__enter{
+    width: 87px;
+    height: 34px;
+    border: 2px solid #BC9CFF;
+    border-radius: 18px;
+    font-size: 12px;
+    line-height: 15px;
+    color: #BC9CFF;
+    font-weight: 700;
+    text-align: center;
+    text-transform: uppercase;
+    padding: 9px 0px 10px 0px;
+}
+
+.bnt__reg{
+    width: 196px;
+    height: 34px;
+    border-radius: 18px;
+    font-size: 12px;
+    line-height: 15px;
+    font-weight: 700;
+    color: #fff;
+    background-color: #BC9CFF;
+    text-transform: uppercase;
+    padding: 9px 0px 10px 0px;
+    border: 2px solid #BC9CFF;
+    text-align: center;
+    margin-left: 20px;
+}
+
+.header__box{
+    display: flex;
+    align-items: center;
+}
+
+@import 'media';
+//end present box
+
