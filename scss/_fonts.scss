@@ -91,6 +91,15 @@
      -moz-osx-font-smoothing: grayscale;
    }
    
+   .icon-arrow_forward:before {
+     content: "\e900";
+   }
+   .icon-arrow-left:before {
+     content: "\f060";
+   }
+   .icon-arrow-right:before {
+     content: "\f061";
+   }
    .icon-chevron-down:before {
      content: "\f078";
    }

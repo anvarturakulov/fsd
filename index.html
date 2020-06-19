@@ -24,16 +24,62 @@
                         </ul>
                     </div>
                     <div class="header__linkbox">
-                        <a class="btn__enter" href="#">войти</a>
-                        <a class="bnt__reg" href="#">зарегистрироваться</a>
+                        <a class="btn__enter" data-fancybox data-src="#modal__input" href="javascript:;">войти</a>
+                        
+                        <a class="bnt__reg" data-fancybox data-src="#modal__reg" href="javascript:;">зарегистрироваться</a>
                     </div>
                 </div>
             </div>
         </div>
     </header>
+    <section class="nomer" >
+        <div class="container__fluid">
+            <div class="nomer__inner" style="background-image: url(/images/bg.jpg);" >
+                <div class="podbor__box"></div>
+                <div class="nomer__text">Лучшие номера для вашей работы, отдыха и просто вдохновения</div>
+            </div>
+        </div> 
+    </section>
+
+
+
+    <div id="modal__input">
+        <div class="login__title">Войти</div>
+        <form>
+            <input type="text" placeholder="Email" required>
+            <input type="text" placeholder="Пароль" required>
+            <button class="btn__form" type="submit">Войти</button>
+            <div class="modal__linkbox">
+            <div class="reg__box">
+                <div class="reg__box-text">Нет аккаунта на Toxin?</div>
+                <div class="btn__form-white">создать</div>
+            </div>
+        </form>
+    </div>
+
+    <div id="modal__reg">
+        <div class="login__title">Регистрация аккаунта</div>
+        <form>
+            <input type="text" placeholder="Имя" required>
+            <input type="text" placeholder="Фамилия" required>
+            
+            <div class="form__text">данные для входа в сервис</div>
+            <input type="text" placeholder="Email" required>
+            <input type="text" placeholder="Пароль" required>
+            <button class="btn__form" type="submit">перейти к оплате</button>
+            <div class="modal__linkbox">
+            <div class="reg__box">
+                <div class="reg__box-text">Уже есть аккаунт на Toxin?</div>
+                <div class="btn__form-white">войти</div>
+            </div>
+        </form>
+    </div>
+
+
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="js/libs.min.js"></script>
     <script src="js/main.js"></script>
 </body>
 </html>
+
 
