@@ -31,14 +31,105 @@
             </div>
         </div>
     </header>
+
     <section class="nomer" >
         <div class="container__fluid">
             <div class="nomer__inner" style="background-image: url(/images/bg.jpg);" >
-                <div class="podbor__box"></div>
+                
+                <div class="search__box">
+                    <div class="login__title">Найдём номера под ваши пожелания</div>
+                    <div class="search__datebox">
+                        <div class="date__box">
+                            <div class="date__box-title">прибытие</div>
+                            <form>
+                                <input type='text' placeholder="ДД.ММ.ГГГГ" class='datepicker-here' />
+                            </form>
+                        </div>
+                        <div class="date__box two">
+                            <div class="date__box-title">выезд</div>
+                            <form>
+                                <input type='text' placeholder="ДД.ММ.ГГГГ" class='datepicker-here' />
+                            </form>
+                        </div>
+                    </div>
+                    
+                    <div class="guist__box">
+                        <div class="date__box-title">гости</div>
+                        <form>
+                            <input type='text' placeholder="Сколько гостей">
+                            <button class="btn__form" type="submit">подобрать номер</button>
+                        </form>
+                    </div>
+                </div>
+
                 <div class="nomer__text">Лучшие номера для вашей работы, отдыха и просто вдохновения</div>
             </div>
         </div> 
     </section>
+
+    <footer class="footer">
+        <div class="footer__top">
+            <div class="container">
+                <div class="footer__top-inner">
+                    <div class="logo__box">
+                        <div class="logo" style="background-image: url(/images/logo.png);"></div>
+                        <div class="logo__box-info">Бронирование номеров в лучшем отеле 2019 года по версии ассоциации «Отельные взгляды»</div>
+                    </div>
+
+                    <div class="footer__menu">
+                        <div class="footer__menu-title">навигация</div>
+                        <ul>
+                            <li><a href="#">О нас</a></li>
+                            <li><a href="#">Новости</a></li>
+                            <li><a href="#">Служба поддержки</a></li>
+                            <li><a href="#">Услуги</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="footer__menu">
+                        <div class="footer__menu-title">о нас</div>
+                        <ul>
+                            <li><a href="#">О сервисе</a></li>
+                            <li><a href="#">Наша команда</a></li>
+                            <li><a href="#">Вакансии</a></li>
+                            <li><a href="#">Инвесторы</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="footer__menu">
+                        <div class="footer__menu-title">Служба поддержки</div>
+                        <ul>
+                            <li><a href="#">Соглашения</a></li>
+                            <li><a href="#">Сообщества</a></li>
+                            <li><a href="#">Связь с нами</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="footer__menu">
+                        <div class="footer__menu-title">Подписка</div>
+                        <div class="footer__menu-info">
+                            Получайте специальные предложения и новости сервиса
+                        </div>
+                        <form>
+                            <input type="text" placeholder="Email">
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer__bottom">
+            <div class="container">
+                <div class="footer__bottom-inner">
+                    <div class="footer__bottom-info">Copyright © 2018 Toxin отель. Все права зачищены.</div>
+                    <div class="footer__bottom-link">
+                        <a class="icon-twitter" href="#"></a>
+                        <a class="icon-facebook-official" href="#"></a>
+                        <a class="icon-instagram" href="#"></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
 
 
     <div id="modal__input">
@@ -60,21 +151,38 @@
         <form>
             <input type="text" placeholder="Имя" required>
             <input type="text" placeholder="Фамилия" required>
-            <div class="box">
-                <div class="radio__box">
-                    <input class="input__radio" name="dzen" type="radio" value="m">
-                    <div class="radio__box-text">Мужчина</div>
-                </div>
-                <div class="radio__box">
-                    <input class="input__radio" name="dzen" type="radio" value="j">
-                    <div class="radio__box-text">Женщина</div>
-                </div> 
-            </div>
             
+            <div class="checkbox">
+                <ul>
+                    <li>
+                        <input type="radio" id="f-option" name="selector">
+                        <label for="f-option">Мужчина</label>
+                        <div class="check"></div>
+                    </li>
+                    <li>
+                        <input type="radio" id="s-option" name="selector">
+                        <label for="s-option">Женщина</label>
+                        <div class="check"><div class="inside"></div></div>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="date__box">
+                <input type='text' placeholder="ДД.ММ.ГГГГ" class='datepicker-here' />
+            </div>
 
             <div class="form__text">данные для входа в сервис</div>
             <input type="text" placeholder="Email" required>
             <input type="text" placeholder="Пароль" required>
+
+            <div class="switch__box">
+                <div class="switch">
+                    <input id="switch-1" type="checkbox" class="switch-input" />
+                    <label for="switch-1" class="switch-label">switch</label>
+                </div>
+                <div class="switch__text">Получать спецпредложения</div>
+            </div>
+
             <button class="btn__form" type="submit">перейти к оплате</button>
             <div class="modal__linkbox">
             <div class="reg__box">

@@ -92,14 +92,23 @@
    }
    
    .icon-arrow_forward:before {
-     content: "\e900";
-   }
-   .icon-arrow-left:before {
-     content: "\f060";
-   }
-   .icon-arrow-right:before {
-     content: "\f061";
-   }
-   .icon-chevron-down:before {
-     content: "\f078";
-   }
+    content: "\e900";
+  }
+  .icon-arrow-left:before {
+    content: "\f060";
+  }
+  .icon-arrow-right:before {
+    content: "\f061";
+  }
+  .icon-chevron-down:before {
+    content: "\f078";
+  }
+  .icon-twitter:before {
+    content: "\f099";
+  }
+  .icon-instagram:before {
+    content: "\f16d";
+  }
+  .icon-facebook-official:before {
+    content: "\f230";
+  }
